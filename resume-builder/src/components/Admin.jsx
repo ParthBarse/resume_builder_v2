@@ -66,7 +66,7 @@ useEffect(()=>{
 const user = {
   _id : "857301450afd17735c0f117e"
 }
-const host = `http://localhost:5000/public`
+const host = `http://20.197.17.85:5000/public`
  
   return (
     <ChakraProvider >

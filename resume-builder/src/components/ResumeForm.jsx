@@ -253,7 +253,7 @@ const ResumeForm = () => {
     
     const res1 = await axios({
       method : "post",
-      url : `http://localhost:5000/createResume`,
+      url : `${process.env.REACT_APP_HOST}/createResume`,
       headers : {
         authToken : localStorage.getItem("token")
       },
@@ -317,7 +317,7 @@ const ResumeForm = () => {
 
       const res = await axios({
         method : "post",
-        url : `http://localhost:5000/addFiles`,
+        url : `${process.env.REACT_APP_HOST}/addFiles`,
         data : formData
       })
       console.log(res);

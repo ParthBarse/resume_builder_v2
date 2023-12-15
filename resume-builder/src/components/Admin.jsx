@@ -13,7 +13,7 @@ const Admin = () => {
   const approveResume = async(userEmail) => {
     const res = await axios({
       method : "get",
-      url : `${process.env.REACT_APP_HOST}/sendApprove?email=${userEmail}`
+      url : `http://20.197.17.85:5550/sendApprove?email=${userEmail}`
     })
     console.log(res);
   }
@@ -21,7 +21,7 @@ const Admin = () => {
   const disApproveResume = async(userEmail) => {
     const res = await axios({
       method : "get",
-      url : `${process.env.REACT_APP_HOST}/sendDisapprove?email=${disApproveStudent}&comment=${disApproveComment}`
+      url : `http://20.197.17.85:5550/sendDisapprove?email=${disApproveStudent}&comment=${disApproveComment}`
     })
     console.log(res);
     setPopUp(false)
